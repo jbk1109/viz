@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+<body>
+<script>
+var svg = d3.select("body").append('svg')
+				.attr('width',500)
+				.attr('height',700)
+				.style('background',"#eee")
+
+var container = svg.append('g');
+
+var drag = d3.behavior.drag()
+    // .origin(function(d) { return d; })
+    .on("dragstart", dragstarted)
+    .on("drag", dragged)
+    // .on("dragend", dragended);
+
+container.append('circle')
+			.attr('cx',20)
+			.attr('cy',20)
+			.style('fill','steelblue')
+			.attr('r',10)
+			.call(drag)
+			
+function dragstarted(){
+	d3.event.sourceEvent.stopPropagation();
+	d3.select(this).classed("dragging", true);
+}
+
+function dragged(d){
+	d3.select(this).attr('cx',d3.event.x).attr('cy',d3.event.y)
+
+}
+// function dragended(d) {
+//   d3.select(this).classed("dragging", false);
+// }
+
+
+</script>
+
+</body>
+
+</html>
