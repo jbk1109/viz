@@ -1,0 +1,105 @@
+<html>
+<style>
+
+body{
+  font-family:  helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+  /*margin:20px 0px 20px 20px ;*/
+  padding-bottom:  20px;
+
+}
+.intro{
+  font-size:24px;
+}
+
+.container{
+	width: 800px;
+
+}
+.toClearDisplay{
+	clear:both;
+}
+
+.line{
+		
+}
+img{
+	/*display: inline;*/
+	float:left;
+	margin-right: 20px;
+
+}
+.container div{
+	overflow: auto;
+	width: 400px;	
+}
+.subheading{
+	font-size: 18px;
+}
+
+
+a{
+  color: steelblue;
+  text-decoration: none;
+}
+
+</style>
+<body>
+<p class="intro">
+  These are some of visualiztions I created with d3 as a side project. 
+</p>
+
+<div class="container">
+	<h1 class="subheading"> Roger Federer's Air Travel in 2014</h1>
+
+	<img src="federer1.png" height='200px'>
+	
+	<p class="description">
+		Tennis players travel around the world all year round to play in tournaments. 
+		On the map, I marked cities and flight paths that Roger Federer flew in 2014.  
+		<br><br>
+		<a href="Federer_Github.html">- View Roger Federer's Air Travel</a>
+	</p>
+
+<div class="toClearDisplay"></div>
+
+	<h1 class="subheading"> Top 100 Tennis Players Distribution Map</h1>
+
+	<img src="tennisMapScreenShot.png" height='200px'>
+	<p class="description">
+		Distribution of Top 100 tennis players' nationalities from 1982 to 2016. 
+
+		<br><br>
+		<a href="tennis_year_end_map.html.html">- View Tennis Players Distribution Map </a>
+	</p>
+
+
+<div class="toClearDisplay"></div>
+
+	<h1 class="subheading"> World Immunization Trend - line graph</h1>
+
+	<img src="immune1.png" height='200px'>
+	<p class="description">
+		Immunization is an important mark in modern medicine. I wanted to visualize the trend of immunization in countries over the years.
+		It's a simple line graph where you can select a country to view its immunization history. 
+		<br><br>
+		<a href="immunization.html">- View Immunization Line Graph</a>
+	</p>
+
+<div class="toClearDisplay"></div>
+	<h1 class="subheading"> World Immunization Trend - stacked bar graph</h1>
+
+	<img src="immuneStackedBar.png" height='200px'>
+	<p class="description">
+		After creating the line graph of immunization history, I wanted to create a visualiation that allowed easier comparison between countries.
+		Stacked bar graph seemed like a rational choice (and I just wanted to learn how to make one in d3).
+		<br><br>
+		<a href="immunization_stacked_bar.html">- View Immunization Stacked Bar</a>
+	</p>
+
+ 
+</div>
+</body>
+
+</html>
